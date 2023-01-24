@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="flex flex-row h-40 bg-blue-300">
+        <div class="my-auto flex flex-row gap-10">
+          <img src="./images/logo.jpg" class="h-30 w-80 ml-10"/>
+          <div class="my-auto">
+            <ul class="flex flex-row gap-7">
+              <li class="text-xl text-white font-mono font-bold"><a href="#sec2" class="hover:text-black">Our_Speciality</a></li>
+              <li class="text-xl text-white font-mono font-bold"><a href="#sec3" class="hover:text-black">Our_Services</a></li>
+              <li class="text-xl text-white font-mono font-bold"><a href="#sec4" class="hover:text-black">About_Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-row gap-10 my-auto">
+            <div class="flex flex-row gap-2">
+                <img src="./images/phone.gif" class="h-[10vh] w-[6vw] ml-40"/>
+                <div class="flex flex-col">
+                    <div class="text-md font-bold text-white">
+                        :8777259814
+                    </div>
+                    <div class="text-md font-bold text-white">
+                        :9432020834
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row gap-2">
+                <img src="./images/location.gif" class="h-[10vh] w-[6vw]"/>
+                <div class="text-md font-bold text-white">
+                    Heritage Institute of Technology
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+      <div class="relative">
+          <ul id="slider" class="fade">
+            <li class="relative">
+              <img src="./images/pic1.jpg" alt="error" class="object-fill h-[70vh] w-full opacity-80"/>
+              <div class="absolute top-0 left-0 h-full w-full flex">
+                <h2 class="text-4xl font-bold my-auto w-full text-center px-10">Know More About Your Sleep Cycle</h2>
+              </div>
+            </li>
+            <li class="relative hidden">
+              <img src="./images/pic2.jpg" alt="error" class="object-fill h-[70vh] w-full opacity-80"/>
+              <div class="absolute top-0 left-0 h-full w-full flex">
+                <h2 class="text-4xl font-bold my-10 w-full text-center px-10 text-white">Take Care Of your Mental Health</h2>
+              </div>
+            </li>
+            <li class="relative hidden">
+              <img src="./images/pic3.jpg" alt="error" class="object-fill h-[70vh] w-full opacity-75"/>
+              <div class="absolute top-0 left-0 h-full w-full flex">
+                <h2 class="text-4xl font-bold my-5 w-full text-center px-10 text-white">Qualified Team Of Technicians</h2>
+              </div>
+            </li>
+          </ul>
+        <div class="absolute px-5 flex h-full w-full top-0 left-0">
+          <div class="my-auto w-full flex justify-between">
+            <button onclick="prev()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg hover:scale-150">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+              </svg>
+            </button>
+            <button onclick="next()" class="bg-white p-3 rounded-full bg-opacity-80 shadow-lg hover:scale-150">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-5" id="sec2">
+      <div class="ml-40 text-4xl font-bold font-mono mt-10">
+        What Makes Us Different?
+      </div>
+      <div class="mt-20 flex flex-row gap-10 justify-center">
+        <div class="flex flex-col gap-5 border-2 h-60 w-[26vw] bg-blue-200 rounded-lg hover:scale-110 hover:bg-red-100 duration-500 ease-in-out">
+          <img src="./images/pic4.jpg" alt="error" class="h-20 w-20 border-2 rounded-full m-3"/>
+          <h3 class="font-bold ml-3 text-lg">Qualified Experts</h3>
+          <p class="text-gray-600 text-lg ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ea!</p>
+        </div>
+        <div class="flex flex-col gap-5 border-2 h-60 w-[26vw] bg-blue-200 rounded-lg hover:scale-110 hover:bg-red-100 duration-500 ease-in-out">
+          <img src="./images/pic6.jpg" alt="error" class="h-20 w-20 border-2 rounded-full m-3"/>
+          <h3 class="font-bold ml-3 text-lg">Online Report</h3>
+          <p class="text-gray-600 text-lg ml-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolorem.</p>
+        </div>
+        <div class="flex flex-col gap-5 border-2 h-60 w-[26vw] bg-blue-200 rounded-lg hover:scale-110 hover:bg-red-100 duration-500 ease-in-out">
+          <img src="./images/pic5.jpg" alt="error" class="h-20 w-20 border-2 rounded-full m-3"/>
+          <h3 class="font-bold ml-3 text-lg">Emergency Diagnosis</h3>
+          <p class="text-gray-600 text-lg ml-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, dolore.</p>
+        </div>
+      </div>
+    </section>
+    <section id="sec3">
+      <div class="ml-40 text-4xl font-bold font-mono mt-10 flex flex-row gap-5"> 
+        <p class="mt-3">Our Srevices</p>
+        <img src="./images/services.gif" alt="error" class="h-20 w-20"/>                   
+      </div>
+      <div class="mt-20 flex flex-row gap-10 justify-center">
+        <div class="relative flex flex-col gap-5 border-2 h-60 w-[20vw]">
+          <img src="./images/pic7.jpg" alt="error" class="object-fill h-60 w-[20vw]"/>
+          <span class="h-10 w-[10vw] bg-red-700 font-bold -mt-20 rounded-lg text-white text-center hover:scale-150 hover:text-xl hover:ml-9 duration-500 ease-in-out">
+            EEG Of Brain
+          </span>
+        </div>
+        <div class="relative flex flex-col gap-5 border-2 h-60 w-[20vw]">
+          <img src="./images/pic7.jpg" alt="error" class="object-fill h-60 w-[20vw]"/>
+          <span class="h-10 w-[10vw] bg-red-700 font-bold -mt-20 rounded-lg text-white text-center hover:scale-150 hover:text-xl hover:ml-9 duration-500 ease-in-out">
+            EEG Of Brain
+          </span>
+        </div>
+        <div class="relative flex flex-col gap-5 border-2 h-60 w-[20vw]">
+          <img src="./images/pic7.jpg" alt="error" class="object-fill h-60 w-[20vw]"/>
+          <span class="h-10 w-[10vw] bg-red-700 font-bold -mt-20 rounded-lg text-white text-center hover:scale-150 hover:text-xl hover:ml-9 duration-500 ease-in-out">
+            EEG Of Brain
+          </span>
+        </div>
+        <div class="relative flex flex-col gap-5 border-2 h-60 w-[20vw]">
+          <img src="./images/pic7.jpg" alt="error" class="object-fill h-60 w-[20vw]"/>
+          <span class="h-10 w-[10vw] bg-red-700 font-bold -mt-20 rounded-lg text-white text-center hover:scale-150 hover:text-xl hover:ml-9 duration-500 ease-in-out">
+            EEG Of Brain
+          </span>
+        </div>
+      </div>
+    </section>
+    <section id="sec4">
+      <div class="ml-40 text-4xl font-bold font-mono mt-10 flex flex-row gap-5"> 
+        <p class="mt-3">About Us</p>
+        <img src="./images/about.jpg" alt="error" class="h-20 w-20"/>                   
+      </div>
+      <div class="ml-40 flex flex-row gap-5">
+        <div class="flex flex-col gap-5">
+          <h3 class="text-gray-700 text-2xl mt-5 font-bold font-serif">Some Heading</h3>
+          <p class="font-mono text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa earum nisi sapiente facilis, fugit quas reprehenderit. Nemo debitis modi repudiandae consequatur aliquam non quo cupiditate distinctio nostrum rem, unde numquam, illum quisquam quibusdam cumque fuga minus eaque, odio maxime nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti odio rem odit vel sed mollitia accusamus commodi nobis excepturi?</p>
+        </div>
+        <img src="./images/aboutUs.jpg" alt="error" class="h-[50vh] w-[50vw] rounded-full p-5"/>
+      </div>
+    </section>
+    <section class="flex flex-col gap-5 bg-red-100 mt-5 h-[60vh]">
+      <div class="ml-20 text-4xl font-bold font-mono mt-10 flex flex-row gap-5">
+        <p>Upload Your File</p>
+        <img src="./images/report.gif" alt="error" class="h-20 w-20"/>
+      </div>
+      <!-- <div class="flex flex-row gap-3 ml-40">
+        <p class="text-xl font-serif">Click</p>
+        <a href="./report.html" class="text-lg underline text-red-600 font-bold">here</a>
+      </div> -->
+      <form method="POST" class="flex flex-col gap-7 ml-40">
+        <div class="flex flex-col gap-3">
+          <label for="Name" class="font-mono text-lg">Name Of Patient:</label>
+          <input class="w-[50vw] font-serif"
+            type="text"
+            id="Name"
+            name="Name"
+            placeholder="Enter the name of patient"
+          />
+        </div>
+        <div class="flex flex-col gap-3">
+          <label for="dob" class="font-mono text-lg">Date of birth of patient:</label>
+          <input class="w-[25vw] font-serif"
+            type="date"
+            id="dob"
+            name="dob"
+            placeholder="Enter date of birth of patient"
+          />
+        </div>
+        <div class="flex flex-col gap-3">
+          <label for="file" class="font-mono text-lg">Patient's report:</label>
+          <input class="font-serif"
+            type="file"
+            id="file"
+            name="file"
+          />
+          <input class="font-serif border-2 border-black rounded-lg w-[10vw] font-bold hover:bg-red-600 hover:text-white"
+            type="submit"
+            value="Upload File"
+          />
+        </div>
+      </form>
+    </section>
+    <footer class="sticky bottom-0 left-0">
+      <div class="p-10 bg-gray-800 text-gray-200 mt-10">
+        <div class="m-auto flex flex-row gap-40 items-center">
+          <img src="./images/logo.jpg" alt="error" class="h-[15vh] w-[15vw]"/>
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-row gap-2">
+              <div class="font-bold">Phone:</div>
+              <div class="text-gray-500">(+91)8777259814</div>
+            </div>
+            <div class="flex flex-row gap-2">
+              <div class="font-bold">Email:</div>
+              <div class="text-gray-500">abc@gmail.com</div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="font-bold">
+              Location:
+            </div>
+            <div class="w-60 text-gray-500">
+              Chowbaga Rd, Anandapur, Mundapara, Kol-700107
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="font-bold">Quick References</div>
+            <ul class="text-gray-500">
+              <li class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-yellow-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <p>
+                  <a href="#sec2" class="hover:text-yellow-300">What makes us different</a>
+                </p>
+              </li>
+              <li class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-yellow-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <p>
+                  <a href="#sec3" class="hover:text-yellow-300">Our Services</a>
+                </p>
+              </li>
+              <li class="flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-yellow-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <p>
+                  <a href="#sec4" class="hover:text-yellow-300">About Us</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
